@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -90,10 +90,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta name="keywords" content="°Ù¶ÈµØÍ¼,°Ù¶ÈµØÍ¼API£¬°Ù¶ÈµØÍ¼×Ô¶¨Òå¹¤¾ß£¬°Ù¶ÈµØÍ¼Ëù¼û¼´ËùµÃ¹¤¾ß" />
-<meta name="description" content="°Ù¶ÈµØÍ¼API×Ô¶¨ÒåµØÍ¼£¬°ïÖúÓÃ»§ÔÚ¿ÉÊÓ»¯²Ù×÷ÏÂÉú³É°Ù¶ÈµØÍ¼" />
-<title>°Ù¶ÈµØÍ¼API×Ô¶¨ÒåµØÍ¼</title>
-<!--ÒıÓÃ°Ù¶ÈµØÍ¼API-->
+<meta name="keywords" content="ç™¾åº¦åœ°å›¾,ç™¾åº¦åœ°å›¾APIï¼Œç™¾åº¦åœ°å›¾è‡ªå®šä¹‰å·¥å…·ï¼Œç™¾åº¦åœ°å›¾æ‰€è§å³æ‰€å¾—å·¥å…·" />
+<meta name="description" content="ç™¾åº¦åœ°å›¾APIè‡ªå®šä¹‰åœ°å›¾ï¼Œå¸®åŠ©ç”¨æˆ·åœ¨å¯è§†åŒ–æ“ä½œä¸‹ç”Ÿæˆç™¾åº¦åœ°å›¾" />
+<title>ç™¾åº¦åœ°å›¾APIè‡ªå®šä¹‰åœ°å›¾</title>
+<!--å¼•ç”¨ç™¾åº¦åœ°å›¾API-->
 <style type="text/css">
     html,body{margin:0;padding:0;}
     .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
@@ -103,52 +103,52 @@
 </head>
 
 <body>
-  <!--°Ù¶ÈµØÍ¼ÈİÆ÷-->
+  <!--ç™¾åº¦åœ°å›¾å®¹å™¨-->
   <div style="width:500px;height:500px;border:#ccc solid 1px;" id="dituContent"></div>
 </body>
 <script type="text/javascript">
-    //´´½¨ºÍ³õÊ¼»¯µØÍ¼º¯Êı£º
+    //åˆ›å»ºå’Œåˆå§‹åŒ–åœ°å›¾å‡½æ•°ï¼š
     function initMap(){
-        createMap();//´´½¨µØÍ¼
-        setMapEvent();//ÉèÖÃµØÍ¼ÊÂ¼ş
-        addMapControl();//ÏòµØÍ¼Ìí¼Ó¿Ø¼ş
-        addMarker();//ÏòµØÍ¼ÖĞÌí¼Ómarker
-        addRemark();//ÏòµØÍ¼ÖĞÌí¼ÓÎÄ×Ö±ê×¢
+        createMap();//åˆ›å»ºåœ°å›¾
+        setMapEvent();//è®¾ç½®åœ°å›¾äº‹ä»¶
+        addMapControl();//å‘åœ°å›¾æ·»åŠ æ§ä»¶
+        addMarker();//å‘åœ°å›¾ä¸­æ·»åŠ marker
+        addRemark();//å‘åœ°å›¾ä¸­æ·»åŠ æ–‡å­—æ ‡æ³¨
     }
     
-    //´´½¨µØÍ¼º¯Êı£º
+    //åˆ›å»ºåœ°å›¾å‡½æ•°ï¼š
     function createMap(){
-        var map = new BMap.Map("dituContent");//ÔÚ°Ù¶ÈµØÍ¼ÈİÆ÷ÖĞ´´½¨Ò»¸öµØÍ¼
-        var point = new BMap.Point(117.311099,31.826337);//¶¨ÒåÒ»¸öÖĞĞÄµã×ø±ê
-        map.centerAndZoom(point,16);//Éè¶¨µØÍ¼µÄÖĞĞÄµãºÍ×ø±ê²¢½«µØÍ¼ÏÔÊ¾ÔÚµØÍ¼ÈİÆ÷ÖĞ
-        window.map = map;//½«map±äÁ¿´æ´¢ÔÚÈ«¾Ö
+        var map = new BMap.Map("dituContent");//åœ¨ç™¾åº¦åœ°å›¾å®¹å™¨ä¸­åˆ›å»ºä¸€ä¸ªåœ°å›¾
+        var point = new BMap.Point(117.311099,31.826337);//å®šä¹‰ä¸€ä¸ªä¸­å¿ƒç‚¹åæ ‡
+        map.centerAndZoom(point,16);//è®¾å®šåœ°å›¾çš„ä¸­å¿ƒç‚¹å’Œåæ ‡å¹¶å°†åœ°å›¾æ˜¾ç¤ºåœ¨åœ°å›¾å®¹å™¨ä¸­
+        window.map = map;//å°†mapå˜é‡å­˜å‚¨åœ¨å…¨å±€
     }
     
-    //µØÍ¼ÊÂ¼şÉèÖÃº¯Êı£º
+    //åœ°å›¾äº‹ä»¶è®¾ç½®å‡½æ•°ï¼š
     function setMapEvent(){
-        map.enableDragging();//ÆôÓÃµØÍ¼ÍÏ×§ÊÂ¼ş£¬Ä¬ÈÏÆôÓÃ(¿É²»Ğ´)
-        map.enableScrollWheelZoom();//ÆôÓÃµØÍ¼¹öÂÖ·Å´óËõĞ¡
-        map.enableDoubleClickZoom();//ÆôÓÃÊó±êË«»÷·Å´ó£¬Ä¬ÈÏÆôÓÃ(¿É²»Ğ´)
-        map.enableKeyboard();//ÆôÓÃ¼üÅÌÉÏÏÂ×óÓÒ¼üÒÆ¶¯µØÍ¼
+        map.enableDragging();//å¯ç”¨åœ°å›¾æ‹–æ‹½äº‹ä»¶ï¼Œé»˜è®¤å¯ç”¨(å¯ä¸å†™)
+        map.enableScrollWheelZoom();//å¯ç”¨åœ°å›¾æ»šè½®æ”¾å¤§ç¼©å°
+        map.enableDoubleClickZoom();//å¯ç”¨é¼ æ ‡åŒå‡»æ”¾å¤§ï¼Œé»˜è®¤å¯ç”¨(å¯ä¸å†™)
+        map.enableKeyboard();//å¯ç”¨é”®ç›˜ä¸Šä¸‹å·¦å³é”®ç§»åŠ¨åœ°å›¾
     }
     
-    //µØÍ¼¿Ø¼şÌí¼Óº¯Êı£º
+    //åœ°å›¾æ§ä»¶æ·»åŠ å‡½æ•°ï¼š
     function addMapControl(){
-        //ÏòµØÍ¼ÖĞÌí¼ÓËõ·Å¿Ø¼ş
+        //å‘åœ°å›¾ä¸­æ·»åŠ ç¼©æ”¾æ§ä»¶
 	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
 	map.addControl(ctrl_nav);
-        //ÏòµØÍ¼ÖĞÌí¼ÓËõÂÔÍ¼¿Ø¼ş
+        //å‘åœ°å›¾ä¸­æ·»åŠ ç¼©ç•¥å›¾æ§ä»¶
 	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
 	map.addControl(ctrl_ove);
-        //ÏòµØÍ¼ÖĞÌí¼Ó±ÈÀı³ß¿Ø¼ş
+        //å‘åœ°å›¾ä¸­æ·»åŠ æ¯”ä¾‹å°ºæ§ä»¶
 	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
 	map.addControl(ctrl_sca);
     }
     
-    //±ê×¢µãÊı×é
-    var markerArr = [{title:"Í¬ÇìÂ¥(Â®Öİ¸®)",content:"ÍíÑç",point:"117.310057|31.825017",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    //æ ‡æ³¨ç‚¹æ•°ç»„
+    var markerArr = [{title:"åŒåº†æ¥¼(åºå·åºœ)",content:"æ™šå®´",point:"117.310057|31.825017",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
 		 ];
-    //´´½¨marker
+    //åˆ›å»ºmarker
     function addMarker(){
         for(var i=0;i<markerArr.length;i++){
             var json = markerArr[i];
@@ -190,21 +190,21 @@
 			})()
         }
     }
-    //´´½¨InfoWindow
+    //åˆ›å»ºInfoWindow
     function createInfoWindow(i){
         var json = markerArr[i];
         var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
         return iw;
     }
-    //´´½¨Ò»¸öIcon
+    //åˆ›å»ºä¸€ä¸ªIcon
     function createIcon(json){
         var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
         return icon;
     }
-//ÎÄ×Ö±ê×¢Êı×é
-    var lbPoints = [{point:"117.31356|31.831123",content:"µØ¿ó¼ÒÔ°15#-ĞÂ·¿"}
+//æ–‡å­—æ ‡æ³¨æ•°ç»„
+    var lbPoints = [{point:"117.31356|31.831123",content:"åœ°çŸ¿å®¶å›­15#-æ–°æˆ¿"}
 		 ];
-    //ÏòµØÍ¼ÖĞÌí¼ÓÎÄ×Ö±ê×¢º¯Êı
+    //å‘åœ°å›¾ä¸­æ·»åŠ æ–‡å­—æ ‡æ³¨å‡½æ•°
     function addRemark(){
         for(var i=0;i<lbPoints.length;i++){
             var json = lbPoints[i];
@@ -216,14 +216,14 @@
         }
     }
     
-    initMap();//´´½¨ºÍ³õÊ¼»¯µØÍ¼
+    initMap();//åˆ›å»ºå’Œåˆå§‹åŒ–åœ°å›¾
 </script>
 </html>
         </div>
         <div class="col-md-5">
           <h2 class="featurette-heading">2016.06.06</h2>
-          <p class="lead">µØ¿ó¼ÒÔ°</p>
-          <p class="lead">Í¬ÇìÂ¥</p>
+          <p class="lead">åœ°çŸ¿å®¶å›­</p>
+          <p class="lead">åŒåº†æ¥¼</p>
         </div>
       </div>
 
@@ -235,7 +235,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2011.03.07-2016.06.06 Personal. &middot; <a href="#">ÏÄ½­ÌÎ</a> &middot; <a href="#">ÄßêÏ</a></p>
+        <p>&copy; 2011.03.07-2016.06.06 Personal. &middot; <a href="#">å¤æ±Ÿæ¶›</a> &middot; <a href="#">å€ªæ™—</a></p>
       </footer>
 
     </div><!-- /.container -->
