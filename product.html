@@ -13,6 +13,30 @@
  <!-- Respond.js proxy on external server -->
 <link href="http://externalcdn.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
 <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+	<script src="js/lrkf.js" charset='utf-8'></script>
+	<script>
+	$(function(){
+		$("#lrkfwarp").lrkf({
+			root:'http://img.lrjz100.com/lrkf/0.01/',	
+			skin:'lrkf_blue1',
+			kfTop:'140',
+			defShow:false,
+			qqs:[
+				{'name':'售前晓梅','qq':'123213200'},			//注意逗号是英文的逗号
+				{'name':'售后小明','qq':'123213200'},
+				{'name':'投诉','qq':'88888888'},
+				{'name':'总经理','qq':'888888'}			//注意最后一个{}不要英文逗号
+			],
+			tel:[
+				{'name':'售前','tel':'888-888-8888'},		//注意逗号是英文的逗号
+				{'name':'售后','tel':'15688888888'}
+			],
+	    qrCode:'s',
+	    more:"contact.jsp",
+	    foot:"9:30-18:00"
+		});
+	});
+	</script>
 </head>
 <body>
 <!-- 导航 -->
