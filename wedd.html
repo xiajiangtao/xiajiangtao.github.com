@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	 <link rel="stylesheet" href="js/jquery.fullPage.css">
+	 <style>
+	.section { text-align: center; font: 30px "Microsoft Yahei"; color: #fff;}
+	</style>
+	<!--[if lte IE 9]>
+	<script src="bootstrap/js/respond.min.js"></script>
+	<script src="bootstrap/js/html5.js"></script>
+	<![endif]-->
+ <!-- Respond.js proxy on external server -->
+	<link href="http://externalcdn.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+</head>
+<body>
+<div id="dowebok">
+  <div class="section">
+      
+      
+  </div>
+	<div class="section">
+		<div class="slide"><h3>第二屏的第一屏</h3></div>
+		<div class="slide"><h3>第二屏的第二屏</h3></div>
+		<div class="slide"><h3>第二屏的第三屏</h3></div>
+	</div>
+
+  <div class="section">
+     	
+  </div>
+  <div class="section">
+      
+  </div>
+</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script src="js/respond.js"></script>
+	<script>
+	$(function(){
+	    $('#dowebok').fullpage({
+	        sectionsColor : ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+	        continuousVertical: true
+	    });
+	
+	    setInterval(function(){
+	        $.fn.fullpage.moveSectionDown();
+	    }, 3000);
+	});
+	</script>
+</body>
+</html>
