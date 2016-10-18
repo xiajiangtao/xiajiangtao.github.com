@@ -1,237 +1,103 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<title>泰州润泉医药科技有限公司</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="css/jquery.fullPage.css">
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/site.css" type="text/css" />
-<!--[if lte IE 9]>
-<script src="bootstrap/js/respond.min.js"></script>
-<script src="bootstrap/js/html5.js"></script>
-<![endif]-->
-<link href="http://externalcdn.com/respond-proxy.jsp" id="respond-proxy" rel="respond-proxy" />
+<meta charset="utf-8">
+<title>工作室</title>
+<link rel="stylesheet" href="http://cdn.bootcss.com/fullPage.js/2.8.2/jquery.fullPage.min.css">
+<style>
+* { margin: 0; padding: 0;}
+ul { list-style-type: none;}
+.top { position: fixed; left: 0; right: 0; top: 0; z-index: 999; height: 50px; background-color: rgba(0, 0, 0, 0.6);}
+.menu { width: 1000px; margin: 0 auto; overflow: hidden;}
+.logo { float: left; margin-top: 9px;}
+.logo a { display: inline-block; width: 32px; height: 32px; background-image: url(images-14/logo_2x.png); background-size: 32px 32px;}
+.nav { float: right; margin-top: 10px; font-size: 0;}
+.nav li { display: inline-block; margin-left: 40px;}
+.nav a { display: inline-block; height: 30px; line-height: 30px; font-size: 12px; color: #fff; text-decoration: none;}
+.nav a:hover { color: #83c3f3;}
+.section { text-align: center; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;}
+#section0 { background-image: url(images/1.jpg);}
+#section1 { background-image: url(images/2.jpg);}
+#section2 { background-image: url(images/3.jpg);}
+#section3 { background-image: url(images/4.jpg);}
+.title1 { opacity: 0.8; font-size: 60px; line-height: 93px; background: url(images-14/titleline1.png) no-repeat center bottom;}
+.title2 { opacity: 0.8; font-size: 40px; line-height: 75px;}
+.title3 { font-size: 24px; font-family: 'PingFang-SC-UltraLight', '微软雅黑', '宋体'; line-height: 48px; margin-top: 20px; opacity: 0.7;}
+#section1 .title1, #section1 .title2, #section2 .title1, #section2 .title2 { color: #fff; opacity: 1;}
+#section1 .title3, #section2 .title3 { color: #fff;}
+#section3 .title3 { color: #000;}
+#section1 .title1 { background: url(images-14/titleline2.png) no-repeat center bottom;}
+#section2 .title1 { background: url(images-14/titleline3.png) no-repeat center bottom;}
+#section3 .title1 { background: url(images-14/titleline4.png) no-repeat center bottom;}
+.mTxt1 { width: 526px; height: 195px; margin: 0 auto; position: relative; top: 25%; background: url(images-14/oneTxt.png) no-repeat 0 0;}
+.DownloadBtn { cursor: pointer; margin: 85px auto 0; width: 220px; height: 50px; position: relative; background: #5396FF; color: #fff; line-height: 50px; font-size: 24px; border-radius: 25px;}
+.DownloadBtn a { display: inline-block; width: 100%; height: 100%; color: #fff; font-family: 'PingFang-SC-UltraLight', '微软雅黑', '宋体';}
+.mTxt1 { width: 526px; height: 195px; margin: 0 auto; position: relative; top: 25%; background: url(images-14/oneTxt.png) no-repeat 0 0;}
+.DownloadBtn { cursor: pointer; margin: 85px auto 0; width: 220px; height: 50px; position: relative; background: #5396FF; color: #fff; line-height: 50px; font-size: 24px; border-radius: 25px;}
+.DownloadBtn a { display: inline-block; width: 100%; height: 100%; color: #fff; font-family: 'PingFang-SC-UltraLight', '微软雅黑', '宋体'; text-decoration: none;}
+#fp-nav ul li a span, .fp-slidesNav ul li a span { background-color: #fff;}
+</style>
+<script src="http://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/fullPage.js/2.8.2/jquery.fullPage.min.js"></script>
+<script>
+$(function() {
+$('#fullpage').fullpage({
+	navigation: true
+});
+});
+</script>
 </head>
-<body>
-<div id="dowebok">
-    <div class="section">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 col-xs-12">
-							<div class="siteHeader">
-								<div class="navbar-site" role="navigation">
-					        <!-- 导航 -->
-									<div class="nav navbar-nav">
-										<!-- class="navbar-brand" 文字导航 --> 
-										<a id="SiteHeaderTop_HyperLinkHome" class="logo" href="index.html"> 
-										<span class="name">
-										<img alt="bannerImage00A" src="images/logo.png"/>
-										</span><span class="com"></span>
-										</a>
-								  </div>
-									<ul class="nav navbar-nav pull-right">
-										<li class="active"><a href="index.html">首页</a></li>
-										<li><a href="product.html">产品</a></li>
-										<li><a href="contact.html">联系我们</a></li>
-									</ul>
-								</div>
-							</div>
-				</div>
-				</div>
-				</div>
-				<div class="container-fiuled">
-					<div class="row">
-						<div class="col-md-12 col-xs-12">
-							<div id="myCarousel" class="carousel slide">
-								<!-- 轮播（Carousel）指标 -->
-								<ol class="carousel-indicators">
-									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-									<li data-target="#myCarousel" data-slide-to="1"></li>
-									<li data-target="#myCarousel" data-slide-to="2"></li>
-								</ol>
-								<div class="carousel-inner">
-									<div class="item active">
-										<img src="img/1.jpg" alt="First slide" />
-										<div class="carousel-caption">
-											<h4>主题</h4>
-											<p>对于主题的描述</p>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/2.jpg" alt="Second slide" />
-										<div class="carousel-caption">
-											<h4>主题</h4>
-											<p>对于主题的描述</p>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/3.jpg" alt="Third slide" />
-										<div class="carousel-caption">
-											<h4>主题</h4>
-											<p>对于主题的描述</p>
-										</div>
-									</div>
-								</div>
-								<a data-slide="prev" href="#myCarousel" class="carousel-control left">
-									<span class="glyphicon glyphicon-chevron-left"></span></a>
-								<a data-slide="next" href="#myCarousel" class="carousel-control right">
-									<span class="glyphicon glyphicon-chevron-right"></span></a>
-							</div>
-						</div>
-					</div>
-				</div>
-    </div>
-    <div class="section">
-        <div class="container">
-			<div class="siteTitle1">服务流程</div>
-			<div class="siteTitle2">Shipping Service</div>
-			<div class="siteHomeFlowContent">
-				
-				
-				
-			</div>
-		</div>
-    </div>
-    <div class="section">
-		<div class="container">
-			<div class="siteTitle1">公司简介</div>
-			<div class="siteTitle2">Shipping Service</div>
-			
-			<div class="siteHomeFlowContent">
-				<div class="row-fluid">
-					<div class="col-md-6 col-xs-12">
-						<div class="page-header">
-							<h3>
-								泰州润泉医药科技有限公司 <small>简介</small>
-							</h3>
-						</div>
-						<p>泰州润泉医药技术研发，医疗器械的研发、生产和销售，化工原料及产品（除危险化学品）销售，自营和代理各类商品及技术的进出口业务（国家限定企业经营或禁止进出口的商品及技术除外）。</p>
-					</div>
-					<div class="col-md-2 col-xs-4">
-						<div class="thumbnail">
-			         <img src="img/5.jpg" alt="通用的占位符缩略图">
-			      </div>
-					</div>
-					<div class="col-md-2 col-xs-4">
-						<div class="thumbnail">
-			         <img src="img/5.jpg" alt="通用的占位符缩略图">
-			      </div>
-					</div>
-					<div class="col-md-2 col-xs-4">
-						<div class="thumbnail">
-			         <img src="img/5.jpg" alt="通用的占位符缩略图">
-			      </div>
-					</div>
-				</div>
-			</div>
-			</div>
-    </div>
-    <div class="section">
-			<div class="siteFooter">
-				<div class="container">
-					<div class="col-md-4 col-xs-12">
-						<div class="siteTitle2">联系方式</div>
-						<address>
-						  <abbr title="联系地址">Address:</abbr> 江苏省泰州市海陵区
-						  药城大道北侧华佗路西侧医疗器械园一期5号楼</br>
-						  <abbr title="联系人">P:</abbr> 程正祥</br>
-						  <abbr title="联系电话">P:</abbr> 13601913596</br>
-						  <strong>Full Name</strong></br>
-						  <a href="mailto:#">mailto@somedomain.com</a>
-						</address>
-					</div>
-					<div class="col-md-4 col-xs-12">
-						<div class="siteTitle2">关于我们</div>
-							<p>泰州润泉医药科技成立于2015年，公司成立之
-							前已累积了10年的清关背景，我们拥有专业的团队和丰富
-							的国际贸易进出口经验，是旧金山湾区最具有潜力的美中
-							国际物流公司。本公司主要提供空运、货代、报关、仓储
-							服务，另外还在免税州建有转运中心，直发中国各地。
-							我们公司秉持“顾客至上”的原则，热诚服务大众，致力
-							于用最短的时间和更可靠安全的渠道，为客户提供全方位
-							的货运服务。
-							</p>
-					</div>
-					<div class="col-md-4 col-xs-12">
-						<div class="siteTitle2">合作伙伴</div>
-						<div class="siteFooterBlock-infoLogo">
-							<div class="logoOthers">
-								<a href="http://www.sf-express.com/cn/sc/" target="_blank">
-									<img alt="sf" src="Images/logo-sf.png" style="width: 120px; height: 65px;" />
-								</a>
-							</div>
-							<div class="logoOthers">
-								<a href="http://www.sf-express.com/cn/sc/" target="_blank">
-									<img alt="sf" src="Images/logo-sf.png" style="width: 120px; height: 65px;" />
-								</a>
-							</div>
-							<div class="logoOthers">
-								<a href="http://www.sf-express.com/cn/sc/" target="_blank">
-									<img alt="sf" src="Images/logo-sf.png" style="width: 120px; height: 65px;" />
-								</a>
-							</div>
-							<div class="logoOthers">
-								<a href="http://www.sf-express.com/cn/sc/" target="_blank">
-									<img alt="sf" src="Images/logo-sf.png" style="width: 120px; height: 65px;" />
-								</a>
-							</div>
-						</div>
-					</div>				
-				</div>			
-				<br/>
-				<div class="siteFooterBottom">
-					Copyright&nbsp;©&nbsp;2015-2016&nbsp;泰州润泉医药科技&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				</div>
-			</div>
-		</div>
-</div>
-	<script src="js/jquery.min.js"></script>
-	<script src="bootstrap/js/bootstrap.js"></script>
-	<script src="js/jquery.fullPage.js"></script>
-	<script src="js/respond.js"></script>
-	<script src="js/lrkf.js" charset='utf-8'></script>
-	<script>
-	$(function(){
-		$("#lrkfwarp").lrkf({
-			root:'http://img.lrjz100.com/lrkf/0.01/',	
-			skin:'lrkf_blue1',
-			kfTop:'140',
-			defShow:false,
-			qqs:[
-				{'name':'售前晓梅','qq':'123213200'},
-				{'name':'售后小明','qq':'123213200'},
-				{'name':'投诉','qq':'88888888'},
-				{'name':'总经理','qq':'888888'}
-			],
-			tel:[
-				{'name':'售前','tel':'888-888-8888'},
-				{'name':'售后','tel':'15688888888'}
-			],
-	    qrCode:'s',
-	    more:"contact.jsp",
-	    foot:"9:30-18:00"
-		});
 
-		$('#dowebok').fullpage({
-			sectionsColor: ['#ffffff','#232C3B', '#ffffff','#232C3B'],
-			'navigation': false
-		});
-		$(window).resize(function(){
-		  autoScrolling();
-		});
-		
-		function autoScrolling(){
-		    var $ww = $(window).width();
-		    if($ww < 1024){
-		        $.fn.fullpage.setAutoScrolling(false);
-		    } else {
-		        $.fn.fullpage.setAutoScrolling(true);
-		    }
-		}
-		
-		autoScrolling();
-	});
+<body>
+<div class="top">
+	<div class="menu">
+		<h1 class="logo"><a href=""></a></h1>
+		<ul class="nav">
+			<li><a href="javascript:">致酷</a></li>
+			<li><a href="javascript:">五笔输入法</a></li>
+			<li><a href="javascript:">皮肤编辑器</a></li>
+			<li><a href="javascript:">皮肤Store</a></li>
+			<li><a href="javascript:">论坛</a></li>
+			<li><a href="javascript:">微博</a></li>
+		</ul>
+	</div>
+</div>
+<div id="fullpage">
+	<div class="section" id="section0">
+		<div class="title1">专业</div>
+		<div class="title2">搜狗拼音输入法 for Mac 3.5.0</div>
+		<div class="title3">我们相信，在Mac的世界中，你只需放飞自己的想象力
+			<br>享受一切理所应当的美好！</div>
+		<div class="DownloadBtn"><a href="" target="_blank">立即下载</a></div>
+	</div>
+	<div class="section" id="section1">
+		<div class="title1">不为另类 只因喜爱</div>
+		<div class="title2">搜狗五笔输入法 for Mac 1.0.0</div>
+		<div class="title3">从PC到Mac，我们力求让你的五笔输入法得到同样的优质体验
+			<br>继承Windows输入法的完美血统</div>
+		<div class="DownloadBtn"><a href="" target="_blank">立即下载</a></div>
+	</div>
+	<div class="section" id="section2">
+		<div class="title1">Hello,Mac!</div>
+		<div class="title2">皮肤编辑器 for Mac 1.0.0</div>
+		<div class="title3">无论你是轻车熟路的皮肤作者，还是灵感爆棚的设计师，都将在这里找到归属感
+			<br>带来梦想照进现实般的创作体验</div>
+		<div class="DownloadBtn"><a href="" target="_blank">立即下载</a></div>
+	</div>
+	<div class="section" id="section3">
+		<div class="title1">个性输入 缤纷心情</div>
+		<div class="title2">海量精美皮肤 for Mac</div>
+		<div class="title3">简约派，或是萌系一族，我们都能给你想要的与众不同
+			<br>打字这件小事，也可玩味十足</div>
+		<div class="DownloadBtn"><a href="" target="_blank">前往皮肤Store</a></div>
+	</div>
+</div>
+
+<!-- 统计 -->
+<script>var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F988268596e7a833ffbfb2e9f82d93e18' type='text/javascript'%3E%3C/script%3E"));
+var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan  style='display:none'id='cnzz_stat_icon_1253231826'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/stat.php%3Fid%3D1253231826' type='text/javascript'%3E%3C/script%3E"));
 </script>
 </body>
+
 </html>
