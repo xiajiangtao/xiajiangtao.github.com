@@ -1,0 +1,101 @@
+body { padding-top: 70px; }
+
+/* 网站首页 - 右边联系方式--------开始---------- */
+.weixinQrCodeRight {
+	position: fixed;
+	right: -170px;
+	bottom: 130px;
+	width: 168px;
+	height: 169px;
+	background-color: #434c6b;
+	z-index: 98;
+}
+.weixinQrCodeRight img {
+	margin-top: 7px;
+	margin-left: 6px;
+}
+.phoneRight {
+	position: fixed;
+	right: -170px;
+	bottom: 172px;
+	width: 168px;
+	height: 42px;
+	padding-top: 9px;
+	padding-left: 18px;
+	color: #fff;
+	background-color: #434c6b;
+	font-size: 18px;
+	z-index: 98;
+}
+#rightTools {
+	position: fixed;
+	right: 0px;
+	bottom: 128px;
+	width: 40px;
+	z-index: 99;
+}
+#rightTools img {
+	margin-bottom: 1px;
+	border: 1px solid #fff;
+	background-color: #232c3b;
+	cursor: pointer;
+}
+#rightTools img:hover {
+	background-color: #434c6b;
+	border: 1px solid #fff;
+}
+#rightTools img.slider:hover {
+	border: 1px solid #434c6b;
+}
+/* 网站首页 - 右边联系方式---------结束--------- */
+
+.container-contact .container-product
+{
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+/* 网站首页 - ---------start--------- */
+.siteHomeFlowContent
+{
+    padding: 100px 0px;
+}
+
+.siteHomeBlock-alt{
+    color: #fff;
+    background-color: #232c3b;
+}
+
+.siteTitle1
+{
+    font-family: "CCFont", sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.siteTitle2
+{
+    font-family: "CCFont", sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+.siteTitle2 a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+.siteTitle2 a:hover
+{
+    color: #f15a24;
+}
+
+/* 网站首页 - ---------end--------- */
+/* ul li a:hover, */
+/* ul li.active a */
+/* { */
+/*     color: #fff; */
+/*     background-color: #f15a24; */
+/*     transition: all .3s ease; */
+/* } */
