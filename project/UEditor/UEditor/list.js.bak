@@ -1,9 +1,9 @@
 var docList = [
     {
         id: 'start',
-        title: '1. 个人小站',
+        title: '1. 开始使用',
         list: [
-            {id:'start',title: '1.1 welcome'}
+            {id:'start',title: '1.1ueditor'}
         ]
     },
     {
